@@ -22,7 +22,7 @@ def build_token_to_id_vocab(sentences, specials=('<pad>', '<bos>', '<eos>', '<un
 
     return vocab
 
-result = build_token_to_id_vocab(['red blue', 'red <pad> green'],specials=('<pad>','<unk>'))
+result = build_token_to_id_vocab(['red blue', 'red <pad> green'],specials=('<pad>','<unk>','<bos>'))
 print(result)
 
 # Step 2 - build_id_to_token_vocab (not yet solved)
